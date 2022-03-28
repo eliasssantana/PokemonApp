@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/55819/AndroidStudioProjects/pokedexapiandroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1845" />
+        <entry key="..\:/Users/55819/AndroidStudioProjects/pokedexapiandroid/app/src/main/res/drawable/rounded_corner.xml" value="0.346" />
         <entry key="..\:/Users/55819/AndroidStudioProjects/pokedexapiandroid/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/55819/AndroidStudioProjects/pokedexapiandroid/app/src/main/res/layout/pokemon_item.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/55819/AndroidStudioProjects/pokedexapiandroid/app/src/main/res/layout/pokemon_item.xml" value="0.66015625" />
       </map>
     </option>
   </component>
