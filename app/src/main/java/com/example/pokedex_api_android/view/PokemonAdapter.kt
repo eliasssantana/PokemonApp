@@ -37,16 +37,16 @@ class PokemonAdapter(private val items: List<Pokemon>): RecyclerView.Adapter<Pok
 
                 // TODO: load images with Glide
 
-                tvNumber.text = "Nº ${item.formattedNumber}"
+//                tvNumber.text = "Nº ${item.formattedNumber}"
                 tvName.text = item.name
-                tvType1.text = item.types[0].name
-
-                if(item.types.size > 1){
-                    tvType2.visibility = View.VISIBLE
-                    tvType2.text = item.types[1].name
-                }else{
-                    tvType2.visibility = View.GONE
-                }
+//                tvType1.text = item.types[0].name
+//
+//                if(item.types.size > 1){
+//                    tvType2.visibility = View.VISIBLE
+//                    tvType2.text = item.types[1].name
+//                }else{
+//                    tvType2.visibility = View.GONE
+//                }
         }
 
     }

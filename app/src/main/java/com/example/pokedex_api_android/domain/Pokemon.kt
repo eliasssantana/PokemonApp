@@ -1,10 +1,11 @@
 package com.example.pokedex_api_android.domain
 
-data class Pokemon (
-        val imageUrl: String,
-        val number: Int,
+data class Pokemon(
+        val imageUrl: String? = null,
+        val number: Int? = null,
         val name: String,
-        val types: List<PokemonType>
+        val url: String,
+        val types: List<PokemonType>? = null
 ){
         val formattedNumber = number.toString().padStart(3,'0')
 }
