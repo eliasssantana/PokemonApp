@@ -1,6 +1,7 @@
 package com.example.pokedex_api_android.api
 
 import android.util.Log
+import com.example.pokedex_api_android.api.model.PokemonApiResult
 import com.example.pokedex_api_android.api.model.PokemonsApiResult
 import com.example.pokedex_api_android.domain.PokemonType
 import retrofit2.*
@@ -23,25 +24,12 @@ object PokemonRepository{
         val call = service.listPokemons(limit)
 
         return call.execute().body()
-//        call.enqueue(object: Callback<PokemonsApiResult>{
-//            override fun onResponse(
-//                call: Call<PokemonsApiResult>,
-//                response: Response<PokemonsApiResult>
-//            ) {
-//                if(response.isSuccessful){
-//                    val body = response.body()
-//
-//                    body?.result?.let{
-//                        Log.d("POKEMON_API", it[0].name)
-//                    }
-//                }
-//                Log.d("POKEMON_API", "Pokemons list loaded successfully")
-//            }
-//
-//            override fun onFailure(call: Call<PokemonsApiResult>, t: Throwable) {
-//                Log.e("POKEMON_API", "Error during pokemons list call response.", t.cause)
-//            }
-//        })
     }
+    fun getPokemon(number: Int): PokemonApiResult? {
+        val call = service.getPokemon(number)
+
+        return call.execute().body()
+    }
+
 }
 
